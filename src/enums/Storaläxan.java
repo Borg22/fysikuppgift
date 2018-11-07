@@ -26,6 +26,25 @@ public static void main(String[] args) {
     public static double kineticEnergy(double mass, double velocity) { //En metod som räknar ut kinetisk energi med hjälp av massa och hastighet.
     	return (mass*velocity*velocity)/2;
     }
+    public static double potentialEnergy(double mass, double height) { //En metod som räknar ut potentiell energi med hjälp av massa och höjd.
+    	return mass*height*9.82;
+    }
+    public static double fallSpeed(double height) {// En metod som räknar ut hur hög hastighet man kommer upp i som man släpper ett föremål från en viss höjd.
+    	return Math.sqrt(2*9.82*height);
+    }
+   public static double delta(double first, double last) { // En metod som räknar ut skillnad mellan två givna värden.
+	   return last - first;		
+	}
+   public static double volumeToMass(FluidTable fluid, double volume) {// En metod som gör om en viss volym av vätska till en massa.
+	   return volume*fluid.density;
+   }
+   public static double volumeToMass(GasTable gas, double volume) { //En metod som gör om en viss volym av gas till en massa.
+	   return volume*gas.density;
+   }
+   public static double volumeToMass(SolidTable solid, double volume) { //En metod som gör om en viss volym av materia till en massa.
+	   return volume*solid.density;
+   }
+   
 	
 	}
 
