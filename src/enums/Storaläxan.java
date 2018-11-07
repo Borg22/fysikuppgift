@@ -23,6 +23,9 @@ public static void main(String[] args) {
     public static double pressureUnderWater(double deep) { // Den här metoden räknar ut villket tryck det är på ett visst djup i vatten
     	return deep*9.82*0.998*1E3;
     }
+    public static double kineticEnergy(double mass, double velocity) { //En metod som räknar ut kinetisk energi med hjälp av massa och hastighet.
+    	return (mass*velocity*velocity)/2;
+    }
 	
 	}
 
