@@ -7,10 +7,9 @@ public static void main(String[] args) {
 }
 
 	public static double fahrenheitToCelsius(double fahrenheit) { // Steg 1
-	    return ((fahrenheit - 32)* 1.8);
+	    return (fahrenheit - 32) / 1.8;
 
-	
-	 	}
+	}
 	
 	
 	}
