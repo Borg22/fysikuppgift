@@ -14,11 +14,15 @@ public static void main(String[] args) {
 	public static double kelvinToCelsius(double kelvin) { // Den här metoden gör om kelvin till celsius
 		return kelvin -273.15;
 	}
-    public static double fluidPressure(FluidTable fluid, double deep) { // Den här metoden räknar ut trycket i vattnet på ett visst djup
-    	double pressure = fluid.density*G*deep;
-    	reture pressure;
-    }
 	
+    public static double fluidPressure(FluidTable fluid, double deep) { // Den här metoden räknar ut trycket på ett visst djup
+    	double pressure = fluid.density*9.82*deep;
+    	return pressure;
+    }
+    
+    public static double pressureUnderWater(double deep) { // Den här metoden räknar ut villket tryck det är på ett visst djup i vatten
+    	return deep*9.82*0.998*1E3;
+    }
 	
 	}
 
