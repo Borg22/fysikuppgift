@@ -14,7 +14,22 @@ public static void main(String[] args) {
 	System.out.println("uppgift 3 = "+ Storaläxan.heat(FluidTable.WATER, 0.005, 1));
 	
 	//Hur stort är det totala trycket 100 meter under havsytan?
-	System.out.println("uppgift 4 = " + Storaläxan.pressureUnderWater(100) + );
+	System.out.println("uppgift 4 = " + Storaläxan.pressureUnderWater(100) + 101300);
+	
+	//Hur högt kommer bollen?
+	System.out.println("uppgift 5 = " + Storaläxan.velocityToHeight(50/3.6) + "meter");
+	
+	//Hur stor effekt har bilens motor uppnått?
+	System.out.println("uppgift 6 = " + Storaläxan.power(Storaläxan.work(740, 100), 4.4));
+	
+	//Hur många gånger stutsar bollen?
+	double hopp =0;
+	for (double i = 10; i > 0.5;) {
+		i = Storaläxan.velocityToHeight(Storaläxan.fallSpeed(i)) - (i/100);
+				hopp++;
+	}
+	// Hur snabbt faller jaok från ett 100 m högt berg?
+	System.out.println(Storaläxan.fallSpeed(100) + "m/s");
 }
 
 }
