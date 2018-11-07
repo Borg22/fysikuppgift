@@ -44,6 +44,9 @@ public static void main(String[] args) {
    public static double volumeToMass(SolidTable solid, double volume) { //En metod som gör om en viss volym av materia till en massa.
 	   return volume*solid.density;
    }
+   public static double svtVelocity(double distance, double time) { //En metod som räknar ut medelhastigheten med hjälp av sträcka och tid
+	   return distance/time;
+   }
    
 	
 	}
